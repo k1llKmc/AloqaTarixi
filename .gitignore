@@ -1,4 +1,3 @@
-# Logs
 logs
 *.log
 npm-debug.log*
@@ -128,3 +127,23 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# =========================
+#      Angular-specific
+# =========================
+
+# Angular build output
+dist/
+.tmp/
+
+# Angular cache (ненужные файлы)
+.angular/cache/
+
+# Angular test coverage
+coverage/
+
+# Angular CLI build artifacts
+.angular/
+
+# Angular environments (если они есть в .gitignore, лучше проверить)
+src/environments/environment*.ts
