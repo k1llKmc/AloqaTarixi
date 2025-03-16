@@ -10,33 +10,18 @@ $Girloy: (
   Heavy: 900,
 );
 
-$SFProDisplay: (
-  UltraLight: 100,
-  Light: 200,
-  Thin: 300,
-  Regular: 400,
-  Medium: 500,
-  SemiBold: 600,
-  Bold: 700,
-  ExtraBold: 800,
-  Heavy: 900,
-);
-
 @each $name, $value in $Girloy {
   @font-face {
     font-family: 'Girloy';
     font-style: normal;
     font-weight: $value;
-    src: url("../fonts/Girloy/Gilroy-#{$name}.ttf");
+    src: url("/fonts/Girloy/Gilroy-#{$name}.ttf");
   }
-}
 
-@each $name, $value in $SFProDisplay {
   @font-face {
-    font-family: 'SF Pro Display';
-    font-style: normal;
+    font-family: 'Girloy';
+    font-style: italic;
     font-weight: $value;
-    src: url("../fonts/SF-Pro-Display/SF-Pro-Display-#{$name}.ttf");
-
+    src: url("/fonts/Girloy/Gilroy-#{$name}Italic.ttf");
   }
 }

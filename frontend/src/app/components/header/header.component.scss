@@ -1,0 +1,27 @@
+
+.header {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 15px 70px;
+
+  &__breadcrumbs {
+    justify-self: start;
+  }
+
+  &__logo {
+    justify-self: center;
+  }
+
+  &__menu {
+    display: flex;
+    gap: 10px;
+    justify-self: end;
+
+    &__select {
+      font-weight: 400;
+    }
+  }
+
+}

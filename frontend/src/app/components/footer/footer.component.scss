@@ -1,0 +1,15 @@
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 17px;
+  position: fixed;
+  bottom: 0;
+  backdrop-filter: blur(64px);
+  border-top: 1px #F1F5F9 solid;
+
+  &-logo{
+    height: 26px;
+  }
+}

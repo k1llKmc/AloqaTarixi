@@ -1,13 +1,16 @@
+@import "../public/assets/styles/hovers";
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
   border: 0;
-  outline: 0;
-  font-family: 'SF Pro Display', sans-serif;
+
+  font-family: 'Gilroy', sans-serif;
   background: transparent;
 }
+
 
 html {
   scroll-behavior: smooth;
@@ -16,6 +19,7 @@ html {
 body {
   min-height: 100vh;
   line-height: 1.5;
+  transition: background 0.2s ease-in, color 0.2s ease-in;
 }
 
 img {
@@ -39,10 +43,17 @@ input, textarea {
   color: inherit;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  * {
-    scroll-behavior: auto;
-    animation: none !important;
-    transition: none !important;
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #050505;
+    color: #fff;
   }
 }
+
+@media (prefers-color-scheme: light) {
+  body {
+    background: #fff;
+    color: #000;
+  }
+}
+
